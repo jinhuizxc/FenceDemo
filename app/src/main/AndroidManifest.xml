@@ -61,6 +61,17 @@
             android:value="592a6bb6e3f705e1c72d721bbec967ea" />
         <!-- 定位需要的服务 -->
         <service android:name="com.amap.api.location.APSService" />
+
+        <!--<activity-->
+            <!--android:name="com.example.jh.fencedemo.GeoFence_Round_Activity"-->
+            <!--android:windowSoftInputMode="adjustResize|stateHidden"-->
+            <!--android:configChanges="keyboardHidden|orientation|screenSize">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        <!--</activity>-->
     </application>
 
 </manifest>
