@@ -6,6 +6,6 @@
 
     <include layout="@layout/plugin_geofence_option" />
 
-    <include layout="@layout/plugin_geofence_map" />
+    <include layout="@layout/plugin_geofence_map"/>
 
 </LinearLayout>
