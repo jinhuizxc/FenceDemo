@@ -15,7 +15,7 @@
             android:id="@+id/rg_fenceType"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
+            android:orientation="vertical" 
             android:visibility="gone">
 
             <RadioButton
@@ -72,7 +72,7 @@
                     android:id="@+id/et_keyword"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:hint="关键字"
+                    android:hint="关键字" 
                     android:visibility="gone"/>
             </LinearLayout>
 
@@ -85,7 +85,7 @@
                     android:id="@+id/et_city"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:hint="城市"
+                    android:hint="城市" 
                     android:visibility="gone"/>
 
                 <EditText
@@ -107,7 +107,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:hint="围栏半径"
-                    android:inputType="numberDecimal"
+                    android:inputType="numberDecimal" 
                     android:visibility="gone"/>
 
                 <EditText
@@ -182,7 +182,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/showOption"
-            android:textSize="16dp"
+            android:textSize="16dp" 
             android:visibility="gone"/>
     </LinearLayout>
 

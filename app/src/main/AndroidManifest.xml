@@ -41,21 +41,13 @@
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
     <!-- 3.2.0版本增加-->
     <uses-permission android:name="android.permission.BLUETOOTH" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true">
-        <activity android:name=".MainActivity"
-            android:windowSoftInputMode="adjustResize|stateHidden"
-            android:configChanges="keyboardHidden|orientation|screenSize">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
 
         <!-- 设置key -->
         <meta-data
@@ -64,16 +56,93 @@
         <!-- 定位需要的服务 -->
         <service android:name="com.amap.api.location.APSService" />
 
-        <!--<activity-->
-            <!--android:name="com.example.jh.fencedemo.GeoFence_Round_Activity"-->
-            <!--android:windowSoftInputMode="adjustResize|stateHidden"-->
-            <!--android:configChanges="keyboardHidden|orientation|screenSize">-->
-            <!--<intent-filter>-->
-                <!--<action android:name="android.intent.action.MAIN" />-->
+        <activity
+            android:name="com.example.jh.fencedemo.StartActivity"
+            android:label="@string/app_name"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-                <!--<category android:name="android.intent.category.LAUNCHER" />-->
-            <!--</intent-filter>-->
-        <!--</activity>-->
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.jh.fencedemo.Location_Activity"
+            android:windowSoftInputMode="adjustResize|stateHidden"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            >
+        </activity>
+        <activity
+            android:name="com.example.jh.fencedemo.LastLocation_Activity"
+            android:windowSoftInputMode="adjustResize|stateHidden"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            >
+        </activity>
+        <activity
+            android:name="com.example.jh.fencedemo.GeoFence_Activity"
+            android:windowSoftInputMode="adjustResize|stateHidden"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            >
+        </activity>
+        <activity
+            android:name="com.example.jh.fencedemo.Assistant_Location_Activity"
+            android:windowSoftInputMode="adjustResize|stateHidden"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            >
+        </activity>
+        <activity
+            android:name="com.example.jh.fencedemo.Alarm_Location_Activity"
+            android:windowSoftInputMode="adjustResize|stateHidden"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            >
+        </activity>
+        <activity
+            android:name="com.example.jh.fencedemo.ErrorCode_Activity"
+            android:windowSoftInputMode="adjustResize|stateHidden"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            >
+        </activity>
+        <activity
+            android:name="com.example.jh.fencedemo.Tools_Activity"
+            android:windowSoftInputMode="adjustResize|stateHidden"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            >
+        </activity>
+        <activity
+            android:name="com.example.jh.fencedemo.GeoFence_Round_Activity"
+            android:windowSoftInputMode="adjustResize|stateHidden"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+        </activity>
+        <activity
+            android:name="com.example.jh.fencedemo.GeoFence_Polygon_Activity"
+            android:windowSoftInputMode="adjustResize|stateHidden"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            >
+        </activity>
+        <activity
+            android:name="com.example.jh.fencedemo.GeoFence_Keyword_Activity"
+            android:windowSoftInputMode="adjustResize|stateHidden"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            >
+        </activity>
+        <activity
+            android:name="com.example.jh.fencedemo.GeoFence_Nearby_Activity"
+            android:windowSoftInputMode="adjustResize|stateHidden"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            >
+        </activity>
+        <activity
+            android:name="com.example.jh.fencedemo.GeoFence_District_Activity"
+            android:windowSoftInputMode="adjustResize|stateHidden"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            >
+        </activity>
+        <activity
+            android:name="com.example.jh.fencedemo.GeoFence_Multiple_Activity"
+            android:windowSoftInputMode="adjustResize|stateHidden"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            >
+        </activity>
     </application>
 
 </manifest>
